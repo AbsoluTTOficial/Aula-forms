@@ -5,19 +5,19 @@ import { Pessoa } from '../model/pessoa';
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css']
-})
+});
 export class FormularioComponent {
   profissoes = ['Engenharia', 'Historia', 'Química', 'Zoologia', 'Ciência da computação'];
   professores=['Diego Rodales', 'Adriana Guarulhos','Pablo Escovar', 'Geraldo Monaco', 'Franchesca Pineapple','Home-lander']
   pessoa: Pessoa = new Pessoa();
-  
-    
+
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  
+
 
   salvar(pessoaForm) {
     /*this.pessoa.nome = pessoaForm.value.nome;
